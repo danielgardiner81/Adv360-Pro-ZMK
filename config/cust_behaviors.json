@@ -1,0 +1,34 @@
+[
+	{
+		"code": "&kp LALT, TAB",
+		"name": "&kp LALT, TAB",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&kp LCTRL, TAB",
+		"name": "&kp LCTRL, TAB",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&kp LCTRL &kp TAB",
+		"name": "&kp LCTRL &kp TAB",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	},
+	{
+		"code": "&kp LCTRL, &kp TAB",
+		"name": "&kp LCTRL, &kp TAB",
+		"params": [
+			"code"
+		],
+		"type": "UD"
+	}
+]
