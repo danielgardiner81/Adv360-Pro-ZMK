@@ -1,14 +1,32 @@
-macro_ctrl_tab: macro_ctrl_tab{
-compatible = "zmk,behavior-macro";
-label = "macro_ctrl_tab";
-#binding-cells = <0>;
-bindings = <&sk LCTRL>, <&kp TAB>;
+macro_ctrl_tab: macro_ctrl_tab {
+    compatible = "zmk,behavior-macro";
+    label = "macro_ctrl_tab";
+    #binding-cells = <0>;
+    bindings = <
+        &macro_press
+        &kp LCTL
+        &kp TAB
+        &macro_release
+        &kp TAB
+        &macro_pause_for_release
+        &macro_release
+        &kp LCTL
+    >;
 };
-macro_alt_tab: macro_alt_tab{
-compatible = "zmk,behavior-macro";
-label = "macro_alt_tab";
-#binding-cells = <0>;
-bindings = <&sk LALT>, <&kp TAB>;
+macro_alt_tab: macro_alt_tab {
+    compatible = "zmk,behavior-macro";
+    label = "macro_alt_tab";
+    #binding-cells = <0>;
+    bindings = <
+        &macro_press
+        &kp LALT
+        &kp TAB
+        &macro_release
+        &kp TAB
+        &macro_pause_for_release
+        &macro_release
+        &kp LALT
+    >;
 };
 macro_quotes: macro_quotes{
 compatible = "zmk,behavior-macro";
