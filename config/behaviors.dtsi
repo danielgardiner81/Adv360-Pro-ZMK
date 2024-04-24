@@ -1,0 +1,20 @@
+/ {
+    behaviors {
+        lshift_capslock: lshift_capslock {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&kp CAPS>;
+        };
+    };
+
+    keymap {
+        compatible = "zmk,keymap";
+
+        default_layer {
+            bindings = <
+                &lshift_capslock
+            >;
+        };
+    };
+};
