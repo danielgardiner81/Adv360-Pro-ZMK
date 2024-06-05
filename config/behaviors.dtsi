@@ -1,10 +1,11 @@
+// Map CAPS to triple tap LSHIFT
 / {
     behaviors {
-        lshift_capslock: lshift_capslock {
+        tab_capslock: tab_capslock {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHIFT>, <&kp LSHIFT>, <&kp CAPS>;
+            bindings = <&kp TAB>, <&kp TAB>, <&kp CAPS>;
         };
     };
 
@@ -13,7 +14,7 @@
 
         default_layer {
             bindings = <
-                &lshift_capslock
+                &tab_capslock
             >;
         };
     };
